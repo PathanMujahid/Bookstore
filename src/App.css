@@ -1,0 +1,78 @@
+.card-image {
+  width: 250px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  transition: transform 150ms ease-in-out;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(124, 124, 124, 0.19);
+}
+.image-slider {
+  position: relative;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+.slider-image {
+  width: 1050px;
+  height: 350px;
+  border-radius: 10px;
+}
+.left {
+  position: absolute;
+  left: 3rem;
+  top: 50%;
+  font-size: 1rem;
+  color: grey;
+  z-index: 5;
+  cursor: pointer;
+  user-select: none;
+}
+.right {
+  position: absolute;
+  right: 3rem;
+  top: 50%;
+  font-size: 2rem;
+  color: gray;
+  z-index: 5;
+  cursor: pointer;
+  user-select: none;
+}
+.currentSlide {
+  transition-duration: 0.5s ease;
+  opacity: 0;
+}
+.currentSlide.active {
+  opacity: 1;
+  transition-duration: 0.5s;
+  transform: scale(1.2);
+}
+h2 {
+  text-align: center;
+}
+
+.bookList {
+  width: 100%;
+  min-height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
+.paper {
+  box-shadow: 0 4px 10px 0 rgba(120, 120, 120, 0.2),
+    0 6px 20px 0 rgba(255, 255, 255, 0.19);
+}
+.paper:hover {
+  transform: scale(1.1);
+  transition: transform 150ms ease-in-out;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(124, 124, 124, 0.19);
+}
+.heading2 {
+  text-align: center;
+  margin-top: 25px;
+}
